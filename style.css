@@ -1,0 +1,93 @@
+:root {
+    --grey: rgb(233, 233, 233);
+    --green: rgb(85, 105, 57);
+    
+    font-family: sans-serif;
+}
+
+body, html {
+    margin: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.side-bar {
+    height: 100vh;
+    position: relative;
+}
+
+.side-bar > img {
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    top: 12rem;
+    padding: 1rem 0rem;
+}
+
+.logo div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo div img:nth-child(2) {
+    height: 8rem;
+}
+
+.logo img {
+    height: 10rem;
+    margin: 0;
+}
+
+.header, .footer {
+    background-color: var(--grey);
+    height: 20rem;
+    width: 2000vh;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 3rem;
+    line-height: 1.2em;
+}
+
+.header > div {
+    padding-top: 8rem;
+    width: 60rem;
+}
+
+button {
+    background-color: var(--green);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 12rem;
+    height: 3rem;
+    border-radius: .4rem;
+    margin-left: 3rem;
+}
+
+.footer p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer div {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    display: flex;
+    gap: .5rem;
+}
+
+.footer p:last-child {
+    color: var(--green);
+}
